@@ -13,41 +13,45 @@
     <header class="header">
         <nav class="header__menu">
           <ul class="header__links-list">
-            <li class="header__links-list no-bullit">главная</li>
-            <li><a href="/" class="link-with-underline">посмотреть лоты</a></li>
-            <li><a href="/" class="link-with-underline">об аукционе</a></li>
+            <li class="header__links-list-item_no-bullit">
+              <a class="header__link_active">главная</a>
+            </li>
+            <li class="header__links-list-item">
+              <a href="/" class="header__link">посмотреть лоты</a>
+            </li>
+            <li class="header__links-list-item">
+              <a href="/" class="header__link">об аукционе</a>
+            </li>
           </ul>
         </nav>
-        <a class="logo-black">
-          <img src="./images/logo-black.svg" alt="Логотип" width="148px" height="105px">
+        <a class="header__logo">
+          <img src="./images/logo-black.svg" alt="Логотип" width="148" height="105" class="header__logo-image">
         </a>
-        <address class="adresses">
-          <ul class="adresses-links-list">
+        <address class="adress">
+          <ul class="header__address">
             <li><a href="tel:+99995555555" class="link-with-underline">+9 999 555 5555</a></li>
             <li><a href="mailto:info@sobaka.ge" class="link-with-underline">info@sobaka.ge</a></li>
             <li>наб. Принсенграхт 263- 265, Амстердам</li>
           </ul>
         </address>
     </header>
+
     <main>
       <section class="cover">
-        <div class="h1">
-          <h1 class="cover__title">
-            <span class="first-word">Оно</span>
-            <span class="second-word">тебе</span>
-            <span class="third-word">надо</span>
-          </h1>
-        </div>
-        <div class="description">
-          <!-- сделать uppercase -->
-          <p>Аукцион вещей, в которые никто не верил</p>
-          <button class="big-button">Сделать ставку</button>
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="first-word">Оно</span>
+          <span class="second-word">тебе</span>
+          <span class="third-word">надо</span>
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
-        <h2>ЛОТЫ</h2>
-        <ul class="lots-list">
-          <!-- попробовать через nth child?? -->
+        <h2 class="lots__heading">ЛОТЫ</h2>
+        <ul class="lots__card-list">
           <li class="lot-card">
             <a href="/" class="lot-header">
               Фильм режиссёра, который бросил киношколу
@@ -79,11 +83,11 @@
             </article>
           </li>
         </ul>
-        <a href="/" class="link-with-underline see-more">посмотреть больше</a>
+        <a href="/" class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="about__logo">
-          <img src="./images/logo-white.svg" alt="Логотип" width="148px" height="114px">
+          <img src="./images/logo-white.svg" alt="Логотип" width="148" height="114" class="about__logo-image">
         </div>
         <div class="column-about">
           <h2>ОБ АУКЦИОНЕ</h2>
@@ -100,6 +104,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <address class="adresses">
           <ul class="adresses-links-list-new">
@@ -117,13 +122,13 @@
       </nav>
       <div class="footer__social-list">
         <a href="youtube.com" class="footer__social-link">
-          <img src="./images/yt.svg" width="48px" height="48px" />
+          <img src="./images/yt.svg" width="48" height="48" alt="YouTube" />
         </a>
         <a href="vk.com" class="footer__social-link">
-          <img src="./images/vk.svg" width="48px" height="48px" />
+          <img src="./images/vk.svg" width="48" height="48" alt="VK" />
         </a>
         <a href="pinterest.com" class="footer__social-link">
-          <img src="./images/pinterest.svg" width="48px" height="48px" />
+          <img src="./images/pinterest.svg" width="48" height="48" alt="Pinterest" />
         </a>
       </div>
     </footer>
