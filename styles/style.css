@@ -1,1 +1,290 @@
-/* место для вашего кода */
+h2 {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  margin: auto 50px;
+  height: 293px;
+}
+
+/* отступы для навигации (хз надо или нет) */
+.header__menu {
+  justify-self: start;
+}
+
+.logo-black {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+/* преобразуем список в строку */
+.header__links-list {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
+
+  display: flex;
+  gap: 24px;
+  list-style: circle;
+  align-self: end;
+}
+
+/* убираем у первого пункта кружочек */
+.no-bullit {
+  list-style: none;
+}
+
+/* форматирование адресов */
+.adresses-links-list {
+  margin-left: 184px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
+  list-style: none;
+  font-style: normal;
+  width: 240px;
+  height: 98px;
+  text-wrap: wrap;
+  line-height: 24px;
+}
+
+/* делаем норм подчеркивание у ссылок */
+.link-with-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+/* первый контейнер в мэйн, нах флексом делать я понятия не имею, ну есть фоновое изображение */
+.cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 1100px;
+  height: 757px;
+  justify-content: space-between;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 100px;
+  margin-top: 165px;
+  text-transform: uppercase;
+}
+
+.first-word {
+  margin-left: 0;
+  letter-spacing: 30%;
+  line-height: 114.99999999999999%;
+}
+
+.second-word {
+  margin-left: 330.5px;
+  letter-spacing: 30%;
+  line-height: 114.99999999999999%;
+}
+
+.third-word {
+  margin-left: 613px;
+  letter-spacing: 30%;
+  line-height: 114.99999999999999%;
+} 
+/*
+.first-word {
+  align-self: flex-start;
+}
+
+.second-word {
+  align-self: center;
+}
+
+.third-word {
+  align-self: flex-end;
+}*/
+
+/* немного меняем стиль описания и надо его как то переместить вниз */
+.description {
+  display: flex;
+  gap: 107px;
+  text-transform: uppercase;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 106px 50px 50px 50px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+h1 {
+  color: white;
+}
+
+.big-button {
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 0;
+  width: 256px;
+  height: 51px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.lots {
+  margin: 180px 24px 120px 24px;
+}
+
+.lots h2 {
+  margin-left: 40px;
+}
+
+.lots-list {
+  display: grid;
+  grid-template-columns: 334px 334px 334px;
+  grid-template-rows: 596px;
+  list-style: none;
+  gap: 25px;
+  margin-top: 27px;
+}
+
+.lot-header {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+  line-height: 120%;
+  margin-top: 48px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.lot-description {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  margin: auto 40px 48px 40px;
+  line-height: 120%;
+}
+
+.lot-card {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.lot-card:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-01.jpg');
+}
+
+.lot-card:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-02.jpg');
+}
+
+.lot-card:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-03.jpg');
+}
+
+.see-more {
+  display: block;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-style: 'Raleway';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.about {
+  margin-top: 120px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-left: 47px;
+  display: grid;
+  grid-template-columns: 240px 693px;
+  grid-template-rows: auto;
+  gap: 72px;
+}
+
+.column-about {
+  display: grid;
+  margin-top: 136px;
+  grid-template-columns: max-content;
+  gap: 20px;
+}
+
+.about__logo {
+  background-color: black;
+  display: flex;
+  width: 240px;
+  height: 240px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 35px;
+}
+
+.column-about h2 {
+  margin-bottom: 80px;
+}
+
+.column-about p {
+  white-space: wrap;
+  max-width: 693px;
+  font-style: 'Raleway';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.footer {
+  display: grid;
+  height: 180px;
+  grid-template-columns: auto auto auto;
+  margin-top: 180px;
+  padding: 0 50px;
+  justify-content: space-between;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer__menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.adresses-links-list-new {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
+  list-style: none;
+  font-style: normal;
+  width: 240px;
+  height: 98px;
+  text-wrap: wrap;
+  line-height: 24px;
+}
